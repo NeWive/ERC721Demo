@@ -1,0 +1,33 @@
+{
+  "name": "newivenft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy-local": "npx hardhat run scripts/deploy.ts --network localhost",
+    "deploy-sepolia": "npx hardhat run scripts/deploy.ts --network sepolia",
+    "testnet": "npx hardhat node",
+    "console": "npx hardhat console --network localhost",
+    "exec-local": "npx hardhat run --network localhost",
+    "exec-sepolia": "npx hardhat run --network sepolia",
+    "test": "npx hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^4.9.0",
+    "alchemy-sdk": "^2.8.3",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.14.0",
+    "web3": "^1.10.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "chai": "^4.3.7",
+    "ts-node": "^10.9.1"
+  }
+}
